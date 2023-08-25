@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>YEN TO POUND</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+        <style>
+            h3 {
+                font-size: 28px;
+            }
+            body {
+                background-color:  #ffffff ;
+            }
+            label {
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+        </style>        
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-dark sticky-top" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">CURRENCY CONVERTOR</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menu
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="inrtousd.html">INR TO USD</a></li>
+                      <li><a class="dropdown-item" href="cadtoeuro.html">CAD TO EURO</a></li>
+                      <li><a class="dropdown-item" href="yentopound.html">YEN TO POUND</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav> 
+          <br>
+          <h3 class="display-6 mx-2">Japanese Yen To Egyptian Pound</h3>
+          <br>
+          <form action="convert.js">
+            <table>
+                <tr>
+                    <td><label class="mx-3 mt-2">YEN</label></td>
+                    <td><input type="number" name="yen" id="yen" value="0" oninput="yentopound();"></td>
+                </tr>
+                <tr>
+                    <td><label class="mx-3 mt-2">POUND</label></td>
+                    <td><input type="number" name="pound" id="pound" value="0"></td>
+                </tr>
+            </table>
+    <br>
+    <h3 class="display-6 mx-2 ">Egyptian Pound To Japanese Yen</h3>
+    <br>
+            <table>
+                <tr>
+                    <td><label class="mx-3 mt-2">POUND</label></td>
+                    <td><input type="number" name="pound1" id="pound1" value="0" oninput="poundtoyen();"></td>
+                </tr>
+                <tr>
+                    <td><label class="mx-3 mt-2">YEN</label></td>
+                    <td><input type="number" name="yen1" id="yen1" value="0"></td>
+                </tr>
+            </table>
+    </form>
+        <script src="convert.js"></script>
+        <footer class="text-center text-white fixed-bottom" style="background-color: #f1f1f1;">
+          <div class="container pt-4">
+            <section class="mb-4">
+
+              <a
+                  class="m-2"
+                  href="mailto:sonalsai777@gmail.com"
+                  target="_blank"
+                  role="button"
+                  ><img src="images/email.png" alt="email" height="25" width="25">
+                  </a>
+              <a
+              class="m-2"
+              href="https://github.com/sonalsai"
+              target="_blank"
+              role="button"
+              ><img src="images/github.png" alt="github" height="25" width="25">
+              </a>
+
+              <a
+              class="m-2"
+              href="https://instagram.com/senpaii_.x?igshid=MzRlODBiNWFlZA=="
+              target="_blank"
+              role="button"
+              ><img src="images/instagram.png" alt="instagram" height="25" width="25">
+              </a>
+
+            </section>
+          </div>
+          <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright :
+            <a class="text-dark" href="index.html">currencyconverter.com</a>
+          </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
