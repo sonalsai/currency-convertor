@@ -16,6 +16,9 @@
             .boxx{
               background-color: #a192f5;
             }
+            span{
+              color: red;
+            }
         </style> 
     </head>
     <body>
@@ -58,78 +61,45 @@
           </div>
         </div>
       </nav>
-          <div class="boxx">
-            <form name="frmval" onsubmit="validateForm();">
-              <table class="mx-5">
+      <div class="boxx">
+        <form name="frmval" onsubmit="return validateForm();">
+            <table class="mx-5">
                 <tr>
-                  <th>
-                    <h5 class="display-5 mx-4 mt-3 mb-3" style="text-align: center;">Contact Us</h5>
-                  </th>
+                    <th>
+                        <h5 class="display-5 mx-4 mt-3 mb-3" style="text-align: center;">Contact Us</h5>
+                    </th>
                 </tr>
                 <tr>
-                  <td>Name</td>
-                  <td><input class="mx-4 form-control" type="text" name="name" id="name" placeholder="Enter name"></td>
+                    <td>Name</td>
+                    <td>
+                        <input class="mx-4 form-control" type="text" name="name" id="name" placeholder="Enter name">
+                        <span class="error-message" id="nameError"></span><br>
+                    </td>
                 </tr>
                 <tr>
-                  <td><br></td>
+                    <td>E-mail</td>
+                    <td>
+                        <input class="mx-4 form-control" type="text" name="email" id="email" placeholder="Enter email">
+                        <span class="error-message" id="emailError"></span><br>
+                    </td>
                 </tr>
                 <tr>
-                  <td>E-mail</td>
-                  <td><input class="mx-4 form-control" type="text" name="email" id="email" placeholder="Enter email"></td>
+                    <td>Message</td>
+                    <td>
+                        <textarea class="mx-4 form-control" cols="23" rows="4" name="message" id="message" placeholder="Enter message"></textarea>
+                        <span class="error-message" id="messageError"></span><br>
+                    </td>
                 </tr>
                 <tr>
-                  <td><br></td>
+                    <td></td>
+                    <td>
+                        <input class="mx-4 btn btn-primary" type="submit" class="btn-dark" onsubmit="val();">
+                        <input type="reset" class="btn btn-danger mx-3">
+                    </td>
                 </tr>
-                <tr>
-                  <td>Message</td>
-                  <td><textarea class="mx-4 form-control" cols="23" rows="4" name="message" id="message" placeholder="Enter message"></textarea></td>
-                </tr>
-                <tr>
-                  <td><br></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td><input class="mx-4 btn btn-primary" type="submit" class="btn-dark" onsubmit="val();">
-                    <input type="reset" class="btn btn-danger mx-3"></td>
-                </tr>
-              </table>
-            </form>
-          </div>
-          <footer class="text-center text-white fixed-bottom" style="background-color: #f1f1f1;">
-            <div class="container pt-2">
-              <section class="mb-3">
-                <a
-                  class="m-2"
-                  href="mailto:sonalsai777@gmail.com"
-                  target="_blank"
-                  role="button"
-                  ><img src="images/email.png" alt="email" height="25" width="25">
-                  </a>
-
-                <a
-                class="m-2"
-                href="https://github.com/sonalsai"
-                target="_blank"
-                role="button"
-                ><img src="images/github.png" alt="github" height="25" width="25">
-                </a>
-
-                <a
-                class="m-2"
-                href="https://instagram.com/senpaii_.x?igshid=MzRlODBiNWFlZA=="
-                target="_blank"
-                role="button"
-                ><img src="images/instagram.png" alt="instagram" height="25" width="25">
-                </a>
-
-              </section>
-            </div>
-            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-              © 2023 Copyright :
-              <a class="text-dark" href="index.html">currencyconverter.com</a>
-            </div>
-          </footer>
-          <script src="js/validate.js"></script>
+            </table>
+        </form>
+    </div>          <script src="js/validate.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
