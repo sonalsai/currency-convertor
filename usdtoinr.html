@@ -13,14 +13,15 @@
             label {
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             }
+            
         </style>
     </head>
     <body>
-      <div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-     </div>
+        <div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+         </div>
         <nav class="navbar navbar-expand-lg bg-dark sticky-top" data-bs-theme="dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">CURRENCY CONVERTOR</a>
@@ -37,13 +38,13 @@
                       Menu
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="inrtousd.html">INR TO USD</a></li>
-                      <li><a class="dropdown-item" href="usdtoinr.html">USD TO INR</a></li>
-                      <li><a class="dropdown-item" href="cadtoeuro.html">CAD TO EURO</a></li>
-                      <li><a class="dropdown-item" href="eurotocad.html">EURO TO CAD</a></li>
-                      <li><a class="dropdown-item" href="yentopound.html">YEN TO POUND</a></li>
-                      <li><a class="dropdown-item" href="poundtoyen.html">POUND TO YEN</a></li>
-                    </ul>
+                        <li><a class="dropdown-item" href="inrtousd.html">INR TO USD</a></li>
+                        <li><a class="dropdown-item" href="usdtoinr.html">USD TO INR</a></li>
+                        <li><a class="dropdown-item" href="cadtoeuro.html">CAD TO EURO</a></li>
+                        <li><a class="dropdown-item" href="eurotocad.html">EURO TO CAD</a></li>
+                        <li><a class="dropdown-item" href="yentopound.html">YEN TO POUND</a></li>
+                        <li><a class="dropdown-item" href="poundtoyen.html">POUND TO YEN</a></li>
+                      </ul>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
@@ -57,26 +58,26 @@
           </nav> 
           <br>
           <br>
-          <div class="boxx">
-            <div class="row">
-              <h3 class="display-6 mx-2 text-break mb-5" style="text-align: center;">Indian Rupee To United States Dollar</h3>
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label class="mt-2 mx-2 mb-2">INR</label>
-                        <input type="text" class="form-control mb-5" name="inr" id="inr" placeholder="Enter value" oninput="inrtousd();">
-                    </div>
-                    </div>
-                    <div class="col-md-4">
-                        <br><br>
-                    </div>
+            <div class="boxx">
+                <div class="row">
+                    <h3 class="display-6 mb-5" style="text-align: center;">United States Dollar To Indian Rupee</h3>
                     <div class="col-md-4">
                         <div class="form-group">
                             <label class="mt-2 mx-2 mb-2">USD</label>
-                            <input type="email" class="form-control mb-5" name="usd" id="usd" placeholder="Enter value">
+                            <input type="text" class="form-control mb-5" name="usd1" id="usd1" placeholder="Enter value" oninput="usdtoinr();">
                         </div>
-                    </div>
-            </div>
-          </div>
+                        </div>
+                        <div class="col-md-4">
+                            <br><br>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="mt-2 mx-2 mb-2">INR</label>
+                                <input type="email" class="form-control mb-5" name="inr1" id="inr1" placeholder="Enter value">
+                            </div>
+                        </div>
+                </div>
+              </div>
         <script src="js/convert.js"></script>
         <footer class="text-center text-white fixed-bottom" style="background-color: #f1f1f1;">
           <div class="container pt-4">
@@ -88,14 +89,14 @@
                   target="_blank"
                   role="button"
                   ><img src="images/email.png" alt="email" height="25" width="25">
-                  </a>
+                </a>
 
               <a
-              class="m-2"
-              href="https://github.com/sonalsai"
-              target="_blank"
-              role="button"
-              ><img src="images/github.png" alt="github" height="25" width="25">
+                class="m-2"
+                href="https://github.com/sonalsai"
+                target="_blank"
+                role="button"
+                ><img src="images/github.png" alt="github" height="25" width="25">
               </a>
 
               <a
