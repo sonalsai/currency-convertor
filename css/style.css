@@ -9,6 +9,10 @@
     cursor: pointer;
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
 }
+.boxx{
+    background: rgb(14,236,159);
+    background: linear-gradient(90deg, rgba(14,236,159,1) 0%, rgba(29,253,235,1) 50%, rgba(69,177,252,1) 100%);
+  }
 body {
     margin: auto;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
