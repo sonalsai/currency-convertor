@@ -62,43 +62,36 @@
           </div>
         </div>
       </nav>
-      <div class="boxx mt-5">
+      <div class="boxx">
         <form name="frmval" onsubmit="return validateForm();">
-            <table class="mx-5">
-                <tr>
-                    <th>
-                        <h5 class="display-5 mx-4 mt-3 mb-3" style="text-align: center;">Contact Us</h5>
-                    </th>
-                </tr>
-                <tr>
-                    <td>Name</td>
-                    <td>
-                        <input class="mx-4 form-control" type="text" name="name" id="name" placeholder="Enter name">
-                        <span class="error-message" id="nameError"></span><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td>E-mail</td>
-                    <td>
-                        <input class="mx-4 form-control" type="text" name="email" id="email" placeholder="Enter email">
-                        <span class="error-message" id="emailError"></span><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Message</td>
-                    <td>
-                        <textarea class="mx-4 form-control" cols="23" rows="4" name="message" id="message" placeholder="Enter message"></textarea>
-                        <span class="error-message" id="messageError"></span><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <input class="mx-4 btn btn-primary" type="submit" class="btn-dark" onsubmit="val();">
-                        <input type="reset" class="btn btn-danger mx-3">
-                    </td>
-                </tr>
-            </table>
+            <div class="form-container">
+                <h5 class="display-5">Contact Us</h5>
+                <div class="form-row">
+                  <div class="form-label"><label for="name">Name:</label></div>
+                  <div class="form-input"><input class="form-control" type="text" name="name" id="name" placeholder="Enter name"></div>
+                  <span class="error-message" id="nameError"></span>
+              </div>
+
+              <div class="form-row">
+                  <div class="form-label"><label for="email">E-mail:</label></div>
+                  <div class="form-input"><input class="form-control" type="text" name="email" id="email" placeholder="Enter email"></div>
+                  <span class="error-message" id="emailError"></span>
+              </div>
+
+              <div class="form-row">
+                  <div class="form-label"><label for="message">Message:</label></div>
+                  <div class="form-input"><textarea class="form-control" cols="23" rows="4" name="message" id="message" placeholder="Enter message"></textarea></div>
+                  <span class="error-message" id="messageError"></span>
+              </div>
+
+              <div class="form-row">
+                  <div class="form-label"></div>
+                  <div class="form-input">
+                      <input class="btn btn-primary" type="submit" value="Submit">
+                      <input class="btn btn-danger" type="reset" value="Reset">
+                  </div>
+              </div>
+            </div>
         </form>
     </div>
     <script src="js/validate.js"></script>
